@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donanım Kıyasla - Gizlilik Politikası</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 40px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(99, 102, 241, 0.3);
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 28px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .date {
+            color: #64748b;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            color: #a5b4fc;
+            font-size: 20px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 2px;
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            color: #cbd5e1;
+        }
+
+        li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #6366f1;
+            font-weight: bold;
+        }
+
+        strong {
+            color: #e2e8f0;
+        }
+
+        a {
+            color: #818cf8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #a5b4fc;
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.2));
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: #a5b4fc;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(99, 102, 241, 0.2);
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="logo">🖥️</div>
+                <h1>Donanım Kıyasla</h1>
+                <p class="subtitle">Gizlilik Politikası</p>
+                <p class="date">Son güncelleme: 16 Aralık 2025</p>
+            </div>
+
+            <p>Bu gizlilik politikası, <strong>Donanım Kıyasla</strong> mobil uygulamasının kullanıcı verilerini nasıl
+                topladığını, kullandığını ve koruduğunu açıklamaktadır.</p>
+
+            <h2>Toplanan Veriler</h2>
+            <p>Uygulamamız aşağıdaki verileri toplar:</p>
+            <ul>
+                <li><strong>Cihaz Bilgileri:</strong> Cihaz modeli, işletim sistemi versiyonu ve benzersiz cihaz kimliği
+                </li>
+                <li><strong>Push Token:</strong> Size bildirim göndermek için kullanılan teknik kimlik</li>
+                <li><strong>Kullanım İstatistikleri:</strong> Uygulama içi etkileşimler ve tercihler (anonim olarak)
+                </li>
+            </ul>
+
+            <h2>Verilerin Kullanım Amacı</h2>
+            <p>Toplanan veriler yalnızca aşağıdaki amaçlarla kullanılır:</p>
+            <ul>
+                <li>Push bildirimleri ve duyuruları göndermek</li>
+                <li>Uygulama deneyimini kişiselleştirmek ve iyileştirmek</li>
+                <li>Teknik sorunları tespit etmek ve çözmek</li>
+                <li>Kullanım analitiği ile uygulamayı geliştirmek</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p>🔒 <strong>Önemli:</strong> Verileriniz üçüncü taraflarla <strong>paylaşılmaz</strong>,
+                    <strong>satılmaz</strong> veya kiralanmaz.</p>
+            </div>
+
+            <h2>Reklam Hizmetleri</h2>
+            <p>Uygulamamızda <strong>Google AdMob</strong> reklam hizmeti kullanılmaktadır. Google, reklamları
+                kişiselleştirmek için bazı veriler toplayabilir.</p>
+            <p>Daha fazla bilgi için: <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik
+                    Politikası</a></p>
+
+            <h2>Veri Güvenliği</h2>
+            <p>Verilerinizin güvenliği bizim için önceliklidir:</p>
+            <ul>
+                <li>Tüm veri transferleri şifreli bağlantılar (HTTPS/TLS) üzerinden yapılır</li>
+                <li>Veriler güvenli sunucularda saklanır</li>
+                <li>Sadece gerekli minimum veri toplanır</li>
+            </ul>
+
+            <h2>Çocukların Gizliliği</h2>
+            <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bilerek bu yaş grubundan veri toplamaz.</p>
+
+            <h2>Haklarınız</h2>
+            <p>Verilerinizle ilgili aşağıdaki haklara sahipsiniz:</p>
+            <ul>
+                <li>Verilerinize erişim talep etme</li>
+                <li>Verilerinizin silinmesini isteme</li>
+                <li>Push bildirimlerini kapatma</li>
+            </ul>
+
+            <h2>Politika Değişiklikleri</h2>
+            <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler bu sayfada yayınlanacak ve
+                gerektiğinde uygulama içi bildirim gönderilecektir.</p>
+
+            <div class="contact-box">
+                <h3>📧 İletişim</h3>
+                <p>Sorularınız veya talepleriniz için bize ulaşın:</p>
+                <p><a href="mailto:enesakmehmet@gmail.com">enesakmehmet@gmail.com</a></p>
+            </div>
+
+            <div class="footer">
+                <p>© 2025 Donanım Kıyasla. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
